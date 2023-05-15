@@ -1,0 +1,72 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.hide-header{
+  display: none;
+  border: solid black 3px;
+  width: fit-content;
+  border-radius: .5rem;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  input{
+    height: 1rem;
+    margin: .5rem 3rem;
+  }  
+  input:invalid{
+    border: solid salmon;
+  }
+
+  input:valid{
+    border: solid green
+  }
+}
+
+.show-header{
+  @extend .hide-header;
+  display: flex;
+}
+
+
+
+#book-card{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, auto);
+  margin: auto;
+  // gap: 1rem;
+}
+
+#book-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  margin:1rem;
+  border-radius: 20px;
+  width: fit-content;
+
+  #btn-container{
+    display: flex;
+    margin: 0.6rem;
+  }
+  button{
+    margin: auto 1rem;
+  }
+}
+
+#add-button{
+  margin: 1rem;
+  padding: .3rem .9rem;
+  font-size: 25px;
+  
+}
+
+
+ul{
+  list-style: none;
+}
+
